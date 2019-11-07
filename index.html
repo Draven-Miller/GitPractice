@@ -16,6 +16,14 @@
             {
                 document.getElementById("result").innerHTML += "Fizz Buzz" + "<br>";
             }
+            else if(i % 21 ==0)
+            {
+                document.getElementById("result").innerHTML += "Fizz Fuzz" + "<br>";
+            }
+            else if(i % 35 ==0)
+            {
+                document.getElementById("result").innerHTML += "Buzz Fuzz" + "<br>";
+            }
             else if(i % 3 ==0)
             {
                 document.getElementById("result").innerHTML += "Fizz" + "<br>";
@@ -23,6 +31,10 @@
             else if(i % 5 ==0)
             {
                 document.getElementById("result").innerHTML += "Buzz" + "<br>";
+            }
+            else if(i % 7 ==0)
+            {
+                document.getElementById("result").innerHTML += "Fuzz" + "<br>";
             }
             else
             {
