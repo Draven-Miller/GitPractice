@@ -11,23 +11,27 @@
     <script>
         var i;
         for(i = 1; i < 101; i++){
-            
-            if(i % 3 == 0 && i % 5 == 0) 
-            {
-                document.getElementById("result").innerHTML += "Fizz Buzz" + "<br>";
-            }
-            else if(i % 3 ==0)
-            {
-                document.getElementById("result").innerHTML += "Fizz" + "<br>";
-            }
-            else if(i % 5 ==0)
-            {
-                document.getElementById("result").innerHTML += "Buzz" + "<br>";
-            }
-            else
-            {
-                document.getElementById("result").innerHTML += i +"<br>";
-            }
+           var output = "";
+           
+           if(i % 3 == 0)
+           {
+               output += "Fizz "
+           }
+           if(i % 5 ==0)
+           {
+               output += "Buzz "
+           }
+           if(i%7==0)
+           {
+               output += "Fuzz "
+           }
+           if(i%3!=0 && i%5!=0 && i%7!=0)
+           {
+                output = i;
+           }
+
+           document.getElementById('result').innerHTML += output + "<br>";
+
         }
     </script>
 </body>
